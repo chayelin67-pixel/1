@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="초등학교 2학년 곱셈구구(2단~9단) 점검 및 교실 대결 학습 퀴즈 메인 포털">
+  <title>⚡ 🐶 🐱 초등 2학년 신나는 곱셈구구 탐험대!</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&family=Gaegu:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind.config.js"></script>
+</head>
+<body class="font-cute bg-[linear-gradient(120deg,#ff9a9e,#fecfef,#fbc2eb,#a1c4fd,#8fd3f4,#a6f3e0,#fff6a1,#ffb6c1)] bg-[length:400%_400%] animate-rainbow-drift min-h-screen flex justify-center items-center p-3 text-slate-800 overflow-x-hidden select-none [touch-action:manipulation]">
+
+  <div class="app-container w-full max-w-[1080px] min-h-[720px] bg-white/97 border-[7px] border-white rounded-game-lg shadow-[0_20px_40px_rgba(99,102,241,0.22),0_0_0_5px_#fde047,0_0_0_10px_#f472b6] flex flex-col relative overflow-hidden">
+
+    <!-- App Header -->
+    <header class="bg-[linear-gradient(90deg,#ff9a9e_0%,#fecfef_30%,#a1c4fd_60%,#a6f3e0_100%)] bg-[length:300%_300%] animate-rainbow-drift-fast text-slate-700 px-6 py-3.5 flex justify-between items-center border-b-[5px] border-white shadow-[0_4px_15px_rgba(0,0,0,0.06)]">
+      <div class="flex items-center gap-2.5">
+        <span class="inline-block animate-mascot-bounce text-[2.2rem]">🌈</span>
+        <h1 class="font-title font-normal text-[2.3rem] bg-[linear-gradient(90deg,#f43f5e,#fb923c,#eab308,#22c55e,#3b82f6,#a855f7)] bg-[length:300%_auto] bg-clip-text text-transparent animate-rainbow-text [text-shadow:2px_2px_0px_rgba(255,255,255,0.5)] tracking-wide">신나는 초등 2학년 곱셈구구 탐험대</h1>
+      </div>
+      <div class="flex gap-2.5">
+        <button id="btn-fullscreen" class="bg-white border-[3px] border-slate-300 text-slate-700 text-[1.3rem] w-[46px] h-[46px] rounded-full cursor-pointer flex items-center justify-center shadow-[0_4px_0_#94a3b8] transition-all duration-250 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] hover:-translate-y-0.5 hover:scale-110 hover:bg-slate-50 active:translate-y-0.5 active:shadow-[0_1px_0_#94a3b8]" onclick="if(!document.fullscreenElement){document.documentElement.requestFullscreen()}else{document.exitFullscreen()}" title="전체화면">⛶</button>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-1 p-5 relative flex flex-col bg-[radial-gradient(circle_at_10%_20%,rgba(254,240,138,0.3)_0%,transparent_40%),radial-gradient(circle_at_90%_80%,rgba(244,114,182,0.25)_0%,transparent_40%),radial-gradient(circle_at_50%_100%,rgba(96,165,250,0.15)_0%,transparent_45%)] before:content-['✨_⭐_🌟_✨_⭐_🌟_✨_⭐'] before:absolute before:top-1.5 before:left-0 before:right-0 before:text-center before:text-[1.1rem] before:opacity-35 before:pointer-events-none before:[letter-spacing:2vw] before:animate-twinkle">
+      <section class="screen active flex flex-col gap-4 animate-pop-in">
+
+        <!-- Dan Selector -->
+        <div class="bg-white border-4 border-slate-200 rounded-game-md p-4 px-5 shadow-[0_8px_18px_rgba(0,0,0,0.04)]">
+          <h2 class="font-title font-normal text-[1.55rem] text-slate-700 mb-3 flex items-center gap-2">⭐ 1. 학습할 곱셈 단을 눌러보세요!</h2>
+          <div class="grid grid-cols-4 gap-2.5">
+            <button class="dan-btn active font-title font-normal text-[1.4rem] py-3.5 px-2 rounded-game-sm cursor-pointer transition-all duration-250 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] flex items-center justify-center gap-1 hover:-translate-y-1 hover:rotate-[-2deg] hover:scale-105 bg-rose-100 border-[3.5px] border-rose-300 text-slate-700 shadow-[0_5px_0_#fb7185] [&.active]:!bg-gradient-to-br [&.active]:!from-indigo-400 [&.active]:!to-indigo-600 [&.active]:!border-indigo-800 [&.active]:!text-white [&.active]:!shadow-[0_5px_0_#312e81] [&.active]:!scale-[1.06] [&.active]:after:content-['_✨']" data-dan="2">2단 ✌️</button>
+            <button class="dan-btn font-title font-normal text-[1.4rem] py-3.5 px-2 rounded-game-sm cursor-pointer transition-all duration-250 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] flex items-center justify-center gap-1 hover:-translate-y-1 hover:rotate-[-2deg] hover:scale-105 bg-orange-100 border-[3.5px] border-orange-300 text-slate-700 shadow-[0_5px_0_#fb923c] [&.active]:!bg-gradient-to-br [&.active]:!from-indigo-400 [&.active]:!to-indigo-600 [&.active]:!border-indigo-800 [&.active]:!text-white [&.active]:!shadow-[0_5px_0_#312e81] [&.active]:!scale-[1.06] [&.active]:after:content-['_✨']" data-dan="3">3단 ☘️</button>
+            <button class="dan-btn font-title font-normal text-[1.4rem] py-3.5 px-2 rounded-game-sm cursor-pointer transition-all duration-250 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] flex items-center justify-center gap-1 hover:-translate-y-1 hover:rotate-[-2deg] hover:scale-105 bg-yellow-100 border-[3.5px] border-yellow-300 text-slate-700 shadow-[0_5px_0_#eab308] [&.active]:!bg-gradient-to-br [&.active]:!from-indigo-400 [&.active]:!to-indigo-600 [&.active]:!border-indigo-800 [&.active]:!text-white [&.active]:!shadow-[0_5px_0_#312e81] [&.active]:!scale-[1.06] [&.active]:after:content-['_✨']" data-dan="4">4단 🍀</button>
+            <button class="dan-btn font-title font-normal text-[1.4rem] py-3.5 px-2 rounded-game-sm cursor-pointer transition-all duration-250 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] flex items-center justify-center gap-1 hover:-translate-y-1 hover:rotate-[-2deg] hover:scale-105 bg-green-100 border-[3.5px] border-green-300 text-slate-700 shadow-[0_5px_0_#22c55e] [&.active]:!bg-gradient-to-br [&.active]:!from-indigo-400 [&.active]:!to-indigo-600 [&.active]:!border-indigo-800 [&.active]:!text-white [&.active]:!shadow-[0_5px_0_#312e81] [&.active]:!scale-[1.06] [&.active]:after:content-['_✨']" data-dan="5">5단 🖐️</button>
+            <button class="dan-btn font-title font-normal text-[1.4rem] py-3.5 px-2 rounded-game-sm cursor-pointer transition-all duration-250 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] flex items-center justify-center gap-1 hover:-translate-y-1 hover:rotate-[-2deg] hover:scale-105 bg-teal-100 border-[3.5px] border-teal-300 text-slate-700 shadow-[0_5px_0_#14b8a6] [&.active]:!bg-gradient-to-br [&.active]:!from-indigo-400 [&.active]:!to-indigo-600 [&.active]:!border-indigo-800 [&.active]:!text-white [&.active]:!shadow-[0_5px_0_#312e81] [&.active]:!scale-[1.06] [&.active]:after:content-['_✨']" data-dan="6">6단 🎲</button>
+            <button class="dan-btn font-title font-normal text-[1.4rem] py-3.5 px-2 rounded-game-sm cursor-pointer transition-all duration-250 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] flex items-center justify-center gap-1 hover:-translate-y-1 hover:rotate-[-2deg] hover:scale-105 bg-blue-100 border-[3.5px] border-blue-300 text-slate-700 shadow-[0_5px_0_#60a5fa] [&.active]:!bg-gradient-to-br [&.active]:!from-indigo-400 [&.active]:!to-indigo-600 [&.active]:!border-indigo-800 [&.active]:!text-white [&.active]:!shadow-[0_5px_0_#312e81] [&.active]:!scale-[1.06] [&.active]:after:content-['_✨']" data-dan="7">7단 🌈</button>
+            <button class="dan-btn font-title font-normal text-[1.4rem] py-3.5 px-2 rounded-game-sm cursor-pointer transition-all duration-250 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] flex items-center justify-center gap-1 hover:-translate-y-1 hover:rotate-[-2deg] hover:scale-105 bg-indigo-100 border-[3.5px] border-indigo-300 text-slate-700 shadow-[0_5px_0_#818cf8] [&.active]:!bg-gradient-to-br [&.active]:!from-indigo-400 [&.active]:!to-indigo-600 [&.active]:!border-indigo-800 [&.active]:!text-white [&.active]:!shadow-[0_5px_0_#312e81] [&.active]:!scale-[1.06] [&.active]:after:content-['_✨']" data-dan="8">8단 🐙</button>
+            <button class="dan-btn font-title font-normal text-[1.4rem] py-3.5 px-2 rounded-game-sm cursor-pointer transition-all duration-250 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] flex items-center justify-center gap-1 hover:-translate-y-1 hover:rotate-[-2deg] hover:scale-105 bg-purple-100 border-[3.5px] border-purple-300 text-slate-700 shadow-[0_5px_0_#a855f7] [&.active]:!bg-gradient-to-br [&.active]:!from-indigo-400 [&.active]:!to-indigo-600 [&.active]:!border-indigo-800 [&.active]:!text-white [&.active]:!shadow-[0_5px_0_#312e81] [&.active]:!scale-[1.06] [&.active]:after:content-['_✨']" data-dan="9">9단 🎈</button>
+            <button class="dan-btn all-dan col-span-4 font-title font-normal text-[1.4rem] py-3.5 px-2 rounded-game-sm cursor-pointer transition-all duration-250 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] flex items-center justify-center gap-1 hover:-translate-y-1 hover:scale-105 bg-gradient-to-br from-amber-400 to-amber-500 border-[3.5px] border-amber-600 text-amber-900 shadow-[0_5px_0_#b45309] [&.active]:!bg-gradient-to-br [&.active]:!from-rose-500 [&.active]:!to-rose-600 [&.active]:!border-rose-800 [&.active]:!text-white [&.active]:!shadow-[0_5px_0_#881337] [&.active]:!scale-[1.06] [&.active]:after:content-['_✨']" data-dan="all">👑 2~9단 왕중왕 전체 모듬 도전!</button>
+          </div>
+        </div>
+
+        <!-- Play Style Selection -->
+        <div class="bg-white border-4 border-slate-200 rounded-game-md p-4 px-5 shadow-[0_8px_18px_rgba(0,0,0,0.04)]">
+          <h2 class="font-title font-normal text-[1.55rem] text-slate-700 mb-3 flex items-center gap-2">⚔️ 2. 신나는 대결 방식을 고르세요!</h2>
+          <div class="flex gap-3.5">
+            <button class="style-btn active flex-1 font-title font-normal text-[1.4rem] py-3.5 px-4 bg-white border-[3.5px] border-slate-300 rounded-game-sm cursor-pointer shadow-[0_5px_0_#94a3b8] transition-all duration-250 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] flex items-center justify-center gap-2 hover:-translate-y-1 hover:rotate-[-1deg] hover:scale-105 [&.active]:!bg-gradient-to-br [&.active]:!from-blue-400 [&.active]:!to-blue-500 [&.active]:!border-blue-700 [&.active]:!text-white [&.active]:!shadow-[0_5px_0_#1e40af] [&.active]:!scale-[1.03]" data-style="split">
+              <span>⚡ 화면 반반 동시 대결!</span>
+              <small class="text-[0.82rem] bg-yellow-300 text-yellow-900 px-2 py-0.5 rounded-lg font-bold">강력 추천!</small>
+            </button>
+            <button class="style-btn flex-1 font-title font-normal text-[1.4rem] py-3.5 px-4 bg-white border-[3.5px] border-slate-300 rounded-game-sm cursor-pointer shadow-[0_5px_0_#94a3b8] transition-all duration-250 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] flex items-center justify-center gap-2 hover:-translate-y-1 hover:rotate-[-1deg] hover:scale-105 [&.active]:!bg-gradient-to-br [&.active]:!from-blue-400 [&.active]:!to-blue-500 [&.active]:!border-blue-700 [&.active]:!text-white [&.active]:!shadow-[0_5px_0_#1e40af] [&.active]:!scale-[1.03]" data-style="relay">
+              <span>🔄 차례대로 릴레이 대결</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Game Mode Selection -->
+        <div class="bg-white border-4 border-slate-200 rounded-game-md p-4 px-5 shadow-[0_8px_18px_rgba(0,0,0,0.04)]">
+          <h2 class="font-title font-normal text-[1.55rem] text-slate-700 mb-3 flex items-center gap-2">🎮 3. 게임 버전을 고르세요!</h2>
+          <div class="grid grid-cols-3 gap-3.5">
+            <div class="game-mode-card active group bg-yellow-50 border-[3.5px] border-yellow-200 rounded-game-md p-4 px-2.5 flex flex-col items-center text-center cursor-pointer transition-all duration-250 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] shadow-[0_6px_0_#fde047] hover:-translate-y-1.5 hover:rotate-[-1deg] hover:scale-[1.03] hover:bg-yellow-100 [&.active]:!bg-gradient-to-br [&.active]:!from-violet-400 [&.active]:!to-violet-500 [&.active]:!border-violet-700 [&.active]:!text-white [&.active]:!shadow-[0_6px_0_#5b21b6] [&.active]:!scale-[1.04]" data-mode="1">
+              <span class="mode-icon text-[2.8rem] mb-1 [filter:drop-shadow(0_4px_6px_rgba(0,0,0,0.1))] transition-all duration-250 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] group-hover:animate-icon-wiggle">🗺️</span>
+              <h3 class="font-title font-normal text-[1.4rem] mb-0.5">1. 땅따먹기</h3>
+              <p class="text-[0.9rem] opacity-90 leading-snug">정답 숫자가 적힌 땅을 터치해서 알록달록 점령해요!</p>
+            </div>
+
+            <div class="game-mode-card group bg-yellow-50 border-[3.5px] border-yellow-200 rounded-game-md p-4 px-2.5 flex flex-col items-center text-center cursor-pointer transition-all duration-250 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] shadow-[0_6px_0_#fde047] hover:-translate-y-1.5 hover:rotate-[-1deg] hover:scale-[1.03] hover:bg-yellow-100 [&.active]:!bg-gradient-to-br [&.active]:!from-violet-400 [&.active]:!to-violet-500 [&.active]:!border-violet-700 [&.active]:!text-white [&.active]:!shadow-[0_6px_0_#5b21b6] [&.active]:!scale-[1.04]" data-mode="2">
+              <span class="mode-icon text-[2.8rem] mb-1 [filter:drop-shadow(0_4px_6px_rgba(0,0,0,0.1))] transition-all duration-250 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] group-hover:animate-icon-wiggle">💣</span>
+              <h3 class="font-title font-normal text-[1.4rem] mb-0.5">2. 폭탄 해제 터치</h3>
+              <p class="text-[0.9rem] opacity-90 leading-snug">10초가 지나기 전에 빠르게 정답을 째깍 터치해요!</p>
+            </div>
+
+            <div class="game-mode-card group bg-yellow-50 border-[3.5px] border-yellow-200 rounded-game-md p-4 px-2.5 flex flex-col items-center text-center cursor-pointer transition-all duration-250 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] shadow-[0_6px_0_#fde047] hover:-translate-y-1.5 hover:rotate-[-1deg] hover:scale-[1.03] hover:bg-yellow-100 [&.active]:!bg-gradient-to-br [&.active]:!from-violet-400 [&.active]:!to-violet-500 [&.active]:!border-violet-700 [&.active]:!text-white [&.active]:!shadow-[0_6px_0_#5b21b6] [&.active]:!scale-[1.04]" data-mode="3">
+              <span class="mode-icon text-[2.8rem] mb-1 [filter:drop-shadow(0_4px_6px_rgba(0,0,0,0.1))] transition-all duration-250 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] group-hover:animate-icon-wiggle">🚀</span>
+              <h3 class="font-title font-normal text-[1.4rem] mb-0.5">3. 우주선 곱셈 팡팡</h3>
+              <p class="text-[0.9rem] opacity-90 leading-snug">우주 속을 두둥실 떠다니는 정답 버블을 팡팡 터뜨려요!</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Start Button -->
+        <button id="btn-start-game" class="font-title font-normal text-[2rem] py-[18px] px-8 bg-gradient-to-br from-emerald-400 to-emerald-600 text-white border-4 border-emerald-700 rounded-game-md cursor-pointer shadow-[0_8px_0_#065f46,0_12px_24px_rgba(16,185,129,0.35)] transition-all duration-250 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] text-center tracking-wide animate-start-pulse hover:!scale-105 hover:-translate-y-0.5 hover:from-emerald-300 hover:to-emerald-400 hover:[animation-play-state:paused] active:translate-y-1 active:shadow-[0_3px_0_#065f46]">🚀 곱셈 대결 시작하기!</button>
+      </section>
+    </main>
+
+  </div>
+
+  <script src="js/portal.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "name": "elem-2nd-multiplication-quiz",
+  "version": "1.0.0",
+  "description": "초등학교 2학년 곱셈구구 대결 학습 퀴즈 웹 애플리케이션",
+  "scripts": {
+    "start": "npx serve ."
+  }
+}
